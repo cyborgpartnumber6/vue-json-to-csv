@@ -15,7 +15,7 @@ module.exports = {
 
       try {
         Object.keys(labels).map(function (m, i) {
-          row += '"' + labels[m].title + '"' + separator
+          row += + labels[m].title + separator
         })
 
         row = row.slice(0, -1)
@@ -41,7 +41,7 @@ module.exports = {
             if (type === 'number' || type === 'float') {
               row += m[k] + separator
             } else {
-              row += '"' + m[k] + '"' + separator
+              row += + m[k] + separator
             }
           })
 
